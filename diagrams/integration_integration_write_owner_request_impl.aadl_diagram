@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="03bcd56e-06cf-4e90-8ac7-3d2449d9dbd6" manual="true">
+    <element uuid="6006a4b0-08aa-40c6-84df-40e09812ac94" manual="true">
+      <element uuid="e002d24b-2a64-4a2f-b1b4-650bddcb4ba1" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>connection_b_d</seg>
+      </bo>
+    </element>
+    <element uuid="50e0185c-d85c-49bd-aca0-72110ac5baff" manual="true">
+      <element uuid="87b8a0fa-d433-468e-b663-04eabb69fe94" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>connection_d_eth</seg>
+      </bo>
+    </element>
+    <element uuid="aa457f09-97d1-4e65-99cb-02b6095c06c6" manual="true">
+      <element uuid="b60a31f5-ed3a-4e0d-8b68-cb6de94b3228" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>connection_m_b</seg>
+      </bo>
+      <bendpoints>
+        <point x="402.0001220703125" y="167.9998779296875"/>
+      </bendpoints>
+    </element>
+    <element uuid="e01f3670-b4d3-4b5e-8c8b-00638f984368" manual="true">
+      <element uuid="0250faf5-882f-41fa-b023-78e87a873fe8" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>connection_port</seg>
+        </bo>
+        <position y="38.0"/>
+      </element>
+      <element uuid="c5d5b679-3d82-4c9a-8e78-108d9572aaab" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>dapp_port</seg>
+        </bo>
+        <position x="441.53123474121094" y="38.0"/>
+      </element>
+      <element uuid="33e24201-bca5-46db-b3d6-c79c1fe9142b" manual="true">
+        <bo>
+          <seg>flow_specification</seg>
+          <seg>write_owner_request_flow</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>backend_application</seg>
+      </bo>
+      <position x="610.0" y="90.0"/>
+      <size width="513.5833129882812" height="90.0"/>
+    </element>
+    <element uuid="a806a959-05e1-4aaf-b28f-8e4b32f7aae9" manual="true">
+      <element uuid="dbc35b17-8d34-4437-b23f-9b66811073ac" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>connection_port</seg>
+        </bo>
+        <position y="38.0"/>
+      </element>
+      <element uuid="bdeafd35-338f-4f2f-99f7-a4527b8c8509" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>etherium_rpc_port</seg>
+        </bo>
+        <position x="483.04168701171875" y="38.0"/>
+      </element>
+      <element uuid="ac8c81c5-0c84-4e91-b997-d1a20579a9ed" manual="true">
+        <bo>
+          <seg>flow_specification</seg>
+          <seg>write_owner_requets_flow</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>dapp_application</seg>
+      </bo>
+      <position x="1260.0" y="90.0"/>
+      <size width="603.2448120117188" height="130.0"/>
+    </element>
+    <element uuid="d97e061a-6ba2-461c-a631-ca94aad8a81a" manual="true">
+      <element uuid="39f220a2-9695-4c93-94a4-19d7eb69982e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>connection_port</seg>
+        </bo>
+        <position y="38.0"/>
+      </element>
+      <element uuid="c32b582e-f465-4058-81ef-771e71ae8fd7" manual="true">
+        <bo>
+          <seg>flow_specification</seg>
+          <seg>WriteOwnerRequestFlow</seg>
+        </bo>
+        <position x="166.0" y="68.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>hyperledger_besu</seg>
+      </bo>
+      <position x="2080.0" y="100.0"/>
+      <size width="441.53125" height="90.0"/>
+    </element>
+    <element uuid="990e9024-985d-4987-9d8c-41a34c59201c" manual="true">
+      <element uuid="f63c339d-de62-426c-8249-49494227fce8" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>backend_port</seg>
+        </bo>
+        <position x="292.40234375" y="40.0"/>
+      </element>
+      <element uuid="ad56e6fb-a083-453c-a6cd-8bc6d24113f3" manual="true">
+        <bo>
+          <seg>flow_specification</seg>
+          <seg>WriteOwnerRequestFlow</seg>
+        </bo>
+        <position x="280.40234375" y="70.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>mobile_application</seg>
+      </bo>
+      <position x="50.0" y="100.0"/>
+      <size width="385.203125" height="90.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>integration.write_owner_request_impl</seg>
+    </bo>
+    <position/>
+    <size width="2570.0" height="310.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>integration::integration.write_owner_request_impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

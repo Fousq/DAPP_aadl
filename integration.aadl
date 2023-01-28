@@ -21,4 +21,15 @@ public
 			connection_d_eth: port dapp_application.etherium_rpc_port -> hyperledger_besu.connection_port;
 			connection_d_np: port dapp_application.node_provider_port -> alchemy.connection_port;
 	end integration.generic;
+	
+	system implementation integration.write_owner_request_impl extends integration.generic
+		flows
+			WriteOwnerRequestFlow: end to end flow mobile_application.WriteOwnerRequestFlow -> 
+			connection_m_b -> 
+			backend_application.write_owner_request_flow ->
+		 	connection_b_d ->
+		 	dapp_application.write_owner_requets_flow ->
+		 	connection_d_eth ->
+		 	hyperledger_besu.WriteOwnerRequestFlow;
+	end integration.write_owner_request_impl;
 end integration;

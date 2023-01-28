@@ -11,12 +11,16 @@ public
 	system mobile
 		features
 			backend_port: out data port Base_Types::String;
+		flows
+			WriteOwnerRequestFlow: flow source backend_port;
 	end mobile;
 
 	system backend
 		features
 			connection_port: in data port Base_Types::String;
 			dapp_port: out data port Base_Types::String;
+		flows
+			write_owner_request_flow: flow path connection_port -> dapp_port;
 	end backend;
 
 	system dapp
@@ -24,11 +28,15 @@ public
 			connection_port: in data port Base_Types::String;
 			etherium_rpc_port: out data port;
 			node_provider_port: out data port Base_Types::String; 
+		flows
+			write_owner_requets_flow: flow path connection_port -> etherium_rpc_port;
 	end dapp;
 
 	system ethereum_client
 		features
 			connection_port: in data port;
+		flows
+			WriteOwnerRequestFlow: flow sink connection_port;
 	end ethereum_client;
 
 	system node_provider
