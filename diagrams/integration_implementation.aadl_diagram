@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="40d842a8-355a-4395-ac2f-fd8ed2401ad6" manual="true">
+    <element uuid="6c83b4fc-5d8f-49c9-b14a-62548a4401eb" manual="true">
+      <element uuid="292defa4-d692-4aa5-a6ac-a2158437a87a" manual="true">
+        <element uuid="45e16d5a-6a32-49c5-8e2d-b1fbbfd0ceba" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>connection_b_d</seg>
+        </bo>
+        <bendpoints>
+          <point x="471.0443115234375" y="108.33333587646484"/>
+          <point x="483.0443115234375" y="108.33333587646484"/>
+        </bendpoints>
+      </element>
+      <element uuid="af665145-267b-4f11-8f78-a97f640e4627" manual="true">
+        <element uuid="8b95320c-67cd-4976-a69a-6b2966207b30" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>connection_d_eth</seg>
+        </bo>
+        <bendpoints>
+          <point x="603.0" y="159.0"/>
+          <point x="655.0599365234375" y="157.5"/>
+          <point x="661.0599365234375" y="157.5"/>
+        </bendpoints>
+      </element>
+      <element uuid="3a46cbe4-52e5-4968-9cbc-6eecd56876de" manual="true">
+        <element uuid="b5921d6d-ab56-44cc-bb00-42de83c466bc" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>connection_d_np</seg>
+        </bo>
+        <bendpoints>
+          <point x="649.0599365234375" y="102.5"/>
+          <point x="661.0599365234375" y="102.5"/>
+        </bendpoints>
+      </element>
+      <element uuid="f330cb7e-f0e5-4d1c-9d49-c04681909600" manual="true">
+        <element uuid="f92edac5-0d85-4e32-82a6-7e1b3719288f" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>connection_f_b</seg>
+        </bo>
+        <bendpoints>
+          <point x="272.27996826171875" y="157.5"/>
+          <point x="278.27996826171875" y="157.5"/>
+          <point x="278.27996826171875" y="114.16666412353516"/>
+          <point x="284.27996826171875" y="114.16666412353516"/>
+        </bendpoints>
+      </element>
+      <element uuid="426bbc37-7c50-447a-83ae-a939366d17eb" manual="true">
+        <element uuid="5d6b8ed4-7e21-47fc-8fde-4d0db9193413" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>connection_m_b</seg>
+        </bo>
+        <bendpoints>
+          <point x="272.27996826171875" y="102.5"/>
+          <point x="284.27996826171875" y="102.5"/>
+        </bendpoints>
+      </element>
+      <element uuid="b2a9190a-52af-43e9-9054-68c19c2efbc6" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>alchemy</seg>
+        </bo>
+        <position x="608.7343826293945" y="52.0"/>
+        <size width="106.83723449707031" height="35.0"/>
+      </element>
+      <element uuid="d8b4d78e-1a1e-4bf5-88a7-52fd687133d7" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>backend_application</seg>
+        </bo>
+        <position x="198.73438262939453" y="51.99999999999999"/>
+        <size width="178.76434326171875" height="35.0"/>
+      </element>
+      <element uuid="cc842b10-614e-4920-a6c3-6d30ede11d38" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>dapp_application</seg>
+        </bo>
+        <position x="408.73438262939453" y="61.99999999999999"/>
+        <size width="158.01563262939453" height="35.0"/>
+      </element>
+      <element uuid="7983a3b2-d0ba-4093-8527-98bbcd0c80d5" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>frontend_application</seg>
+        </bo>
+        <position x="18.73438262939453" y="132.0"/>
+        <size width="177.27996063232422" height="35.0"/>
+      </element>
+      <element uuid="38b77143-8dc0-474e-a162-076733b4afff" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>hyperledger_besu</seg>
+        </bo>
+        <position x="568.7343826293945" y="152.0"/>
+        <size width="163.93359375" height="35.0"/>
+      </element>
+      <element uuid="1a3a455f-ddcd-4703-8831-41a7bc558509" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>mobile_application</seg>
+        </bo>
+        <position x="9.6484375" y="47.0"/>
+        <size width="167.63152313232422" height="35.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>integration.generic</seg>
+      </bo>
+      <position x="91.26561737060547" y="38.0"/>
+      <size width="737.9935302734375" height="192.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>integration</seg>
+    </bo>
+    <position/>
+    <size width="880.0" height="370.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>integration</seg>
+    </context>
+  </config>
+</diagram:Diagram>
