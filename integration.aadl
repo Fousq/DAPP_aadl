@@ -26,10 +26,12 @@ public
 		flows
 			WriteOwnerRequestFlow: end to end flow mobile_application.WriteOwnerRequestFlow -> 
 			connection_m_b -> 
-			backend_application.write_owner_request_flow ->
+			backend_application.dapp_request ->
 		 	connection_b_d ->
-		 	dapp_application.write_owner_requets_flow ->
+		 	dapp_application.ethereum_request ->
 		 	connection_d_eth ->
 		 	hyperledger_besu.WriteOwnerRequestFlow;
 	end integration.write_owner_request_impl;
+	
+	
 end integration;
